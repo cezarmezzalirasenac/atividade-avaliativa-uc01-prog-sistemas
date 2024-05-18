@@ -14,7 +14,7 @@ public class AssentoPrimeiraClasse extends Assento {
           Fileira: %d
           Poltrona: %d
         """;
-    System.out.printf(mensagem, this.fileiraAssento, this.numeroAssento);
+    System.out.printf(mensagem, this.valor, this.fileiraAssento, this.numeroAssento);
   }
 
 }

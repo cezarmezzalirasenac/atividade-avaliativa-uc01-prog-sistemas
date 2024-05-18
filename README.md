@@ -1,5 +1,7 @@
 # Atividade Avaliativa - UC1 - Programador de Sistemas - Senac Pato Branco
 
+
+
 Situação problema:
 
 Uma companhia aérea está adquirindo uma nova aeronave do tipo widebody, que possui dois corredores com 3 fileiras cada, sendo que as fileiras das janelas possuem 3 assentos e a fileira do meio possui 5 poltronas. A aeronave possui um total de 20 fileiras.

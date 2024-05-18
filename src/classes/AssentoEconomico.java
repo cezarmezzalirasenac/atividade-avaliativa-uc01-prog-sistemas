@@ -1,5 +1,7 @@
 package classes;
 
+import static java.lang.StringTemplate.STR;
+
 public class AssentoEconomico extends Assento {
 
   public AssentoEconomico(int id, int numeroAssento,
@@ -9,8 +11,13 @@ public class AssentoEconomico extends Assento {
 
   @Override
   public void reservar() {
-    System.out.printf("Poltrona Economica reservada com sucesso!\nValor: R$ %.2f\nFileira: %d\nPoltrona: %d",
-        this.valor, this.fileiraAssento, this.numeroAssento);
+    var message = """
+          Poltrona Economica reservada com sucesso!
+          Valor: R$ %.2f
+          Fileira: %d
+          Poltrona: %d
+        """.formatted(this.valor, this.fileiraAssento, this.numeroAssento);
+    System.out.println(message);
   }
 
 }

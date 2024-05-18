@@ -36,10 +36,10 @@ public class App {
         // 6- Se a fileira for menor ou igual a cinco,
         // deve criar um objeto AssentoPrimeiraClasse
         // 7- Senão, deve criar um objeto AssentoEconomico
-        if (fileira < 5) {
-            assentos[fileira - 1][poltrona - 1] = new AssentoEconomico(random.nextInt(), poltrona, fileira);
-        } else {
+        if (fileira <= 5) {
             assentos[fileira - 1][poltrona - 1] = new AssentoPrimeiraClasse(random.nextInt(), poltrona, fileira);
+        } else {
+            assentos[fileira - 1][poltrona - 1] = new AssentoEconomico(random.nextInt(), poltrona, fileira);
         }
 
         // 8- Após criar o objeto, deverá chamar o método reservar do mesmo,
